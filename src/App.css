@@ -1,0 +1,113 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  background-color: rgb(4, 236, 167);
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.sidebarRoot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+}
+
+.contentRoot {
+  height: 100vh;
+  width: 100%;
+}
+
+.node {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+  border: solid black 2px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;     
+}
+
+.node:hover{
+  cursor:default;
+}
+
+.cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(240, 206, 56);
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 50%;
+  pointer-events: none;
+  display: none;
+}
+
+.edgeWeight{
+  position: absolute;
+  color: black;
+  font-size: 24px;
+}
+
+.nodeDistance{
+  position: absolute;
+  color: rgb(185, 16, 16);
+  font-size: 16px;
+}
+
+#addNodeButt, #addEdgeButt{
+
+  width: 60%;
+  margin: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.buttons{
+  width: 60%;
+  margin: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.edgeWeightForm{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addEdgeTextSpace{
+  width: 100%;
+}
+.addEdgeTextButton{
+  width: 85.6%;
+  align-items: center;
+}
+
+.sideBarText{
+  font-size: 13px;
+}
